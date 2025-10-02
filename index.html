@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Now</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Now</h1>
+        </header>
+
+        <main>
+            <!-- Search Section -->
+            <section class="search-section">
+                <input type="text" placeholder="Enter your city" class="input-box">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </section>
+
+            <!-- Location Not Found -->
+            <section class="location-not-found">
+                <h2>Sorry, location not found!</h2>
+                <img src="assets/404.png" alt="404 Error">
+            </section>
+
+            <!-- Weather Body -->
+            <section class="weather-body">
+                <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
+
+                <div class="weather-box">
+                    <p class="temperature">0 <sup>°C</sup></p>
+                    <p class="description">Clear</p>
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <span id="humidity">0%</span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span id="wind-speed">0 Km/H</span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by OpenWeatherMap API</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
