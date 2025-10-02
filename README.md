@@ -17,7 +17,7 @@ A sleek and responsive web application that provides real-time weather updates f
 
 | Frontend | Backend | API |
 |----------|---------|-----|
-| HTML5, CSS3, JavaScript | Optional (Node.js / Express) | OpenWeatherMap / WeatherAPI |
+| HTML5, CSS3, JavaScript | OpenWeatherMap / WeatherAPI |
 
 ## 📦 Installation
 
